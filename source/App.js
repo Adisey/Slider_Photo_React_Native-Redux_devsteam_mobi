@@ -11,7 +11,7 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 // import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
 import { Container } from 'native-base';
 // Components
-import { AppHeader } from './Components';
+import { AppHeader, Gallery } from './Components';
 
 const instructions = Platform.select ({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -26,6 +26,7 @@ export default class App extends Component<Props> {
         return (
             <Container>
                 <AppHeader/>
+                {/*<Gallery/>*/}
                 <View style={styles.container}>
                     <Text style={styles.welcome}>Welcome to React Native!</Text>
                     <Text style={styles.welcome}>!++++555+++!</Text>
