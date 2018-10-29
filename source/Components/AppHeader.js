@@ -12,9 +12,7 @@ import { Container, Header, Title, Body, Left, Right, } from 'native-base';
 
 // Components
 
-
-type Props = {};
-export default class AppHeader extends Component<Props> {
+export default class AppHeader extends Component{
     render() {
         return (
             <Container>

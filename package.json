@@ -1,21 +1,26 @@
 {
-  "name": "gallery_raect_native_devsteam_mobi",
-  "version": "0.0.1",
+  "name": "raect_native_gallery_devsteam_mobi",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
+    "immutable": "^3.8.2",
     "native-base": "^2.8.1",
     "react": "16.6.0-alpha.8af6728",
-    "react-native": "0.57.4"
+    "react-native": "0.57.4",
+    "redux": "^4.0.1",
+    "react-redux": "^5.0.7",
+    "redux-saga": "^0.16.2"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.2",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "redux-logger": "^3.0.6"
   },
   "jest": {
     "preset": "react-native"

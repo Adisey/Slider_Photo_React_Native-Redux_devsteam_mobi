@@ -7,41 +7,60 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-// import { Container } from 'native-base';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+// Components
+// import { StyleSheet, Text, View } from 'react-native';
+import { Container, List, ListItem, Left, Right, Text, Body } from 'native-base';
+// Actions
+import { photosActions } from '../bus/photos/actions';
 
+const mapStateToProps = (state) => {
+    return {
+        photos: state.photos,
+    };
+};
 
-type Props = {};
-export default class Gallery extends Component<Props> {
+const mapDispatchToProps = (dispatch) => {
+    return {
+        actions: bindActionCreators({ ...photosActions }, dispatch),
+    };
+};
+
+class Gallery extends Component {
+    componentDidMount () {
+        console.log(`componentDidMount -> -> ` );
+        const { actions } = this.props;
+        console.log(`componentDidMount -> 'actions' -> `, actions );
+        actions.fetchPhotosAsync();
+    }
     render() {
+        const {photos} = this.props;
+        console.log(` -> "photos" -> `, photos);
         return (
-                <View style={styles.container}>
-                    <Text>5555</Text>
-                    {/*<Text>4444</Text>*/}
-                    {/*<Text>3333</Text>*/}
-                    {/*<Text>2222</Text>*/}
-                    {/*<Text>1111</Text>*/}
-                </View>
+            <Container>
+                <List>
+                    { photos.map((item, index) => {
+                        return (
+                            <ListItem key = {item.get('id')}>
+                                <Left>
+                                    <Text>{item.get('id')}</Text>
+                                </Left>
+                                <Body>
+                                <Text>777</Text>
+                                </Body>
+                            </ListItem>
+                        )
+                    })}
+                </List>
+            </Container>
         );
     }
 }
 
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps,
+)(Gallery);
 
-const styles = StyleSheet.create ({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#f5ff4e',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});
+
