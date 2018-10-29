@@ -3,7 +3,6 @@ import { fromJS, List } from 'immutable';
 // Types
 import { type } from './types';
 
-
 const initalState = fromJS([]);
 
 export const photosReducer = (state = initalState, action) => {
