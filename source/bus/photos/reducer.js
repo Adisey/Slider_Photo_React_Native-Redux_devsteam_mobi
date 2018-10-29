@@ -4,18 +4,12 @@ import { fromJS, List } from 'immutable';
 import { type } from './types';
 
 
-const initalState = fromJS([{id: 'a'},{id: 'b'},{id: 'c'}]);
+const initalState = fromJS([]);
 
 export const photosReducer = (state = initalState, action) => {
-
-    console.log(`photosReducer <---> "action.type" <---> `, action.type );
     switch (action.type) {
         case type.FILL_PHOTOS:
-            console.log(`FILL_PHOTOS --- OLD STATE -> "state" -> `, state);
-            console.log(`FILL_PHOTOS -> "action.payload" -> `, action.payload);
-            const newState = fromJS(action.payload);
-            console.log(`FILL_PHOTOS --- NEW STATE -> "state" -> `, newState);
-            return newState;
+            return fromJS(action.payload);
 
         default:
             return state;
