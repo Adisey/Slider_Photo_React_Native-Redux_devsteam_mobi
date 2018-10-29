@@ -1,21 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Container, Header, Title, Body, Left, Right, } from 'native-base';
-
 // Components
+import { Container, Header, Title, Body, Left, Right, } from 'native-base';
+// Styles
+// import { styles } from './styles';
 
 export default class AppHeader extends Component{
     render() {
         return (
-            <Container>
                 <Header>
                     <Left/>
                     <Body>
@@ -23,7 +14,6 @@ export default class AppHeader extends Component{
                     </Body>
                     <Right/>
                 </Header>
-            </Container>
         );
     }
 }

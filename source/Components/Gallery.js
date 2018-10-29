@@ -11,9 +11,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // Components
 // import { StyleSheet, Text, View } from 'react-native';
-import { Container, List, ListItem, Left, Right, Text, Body } from 'native-base';
+import { Content, Card, CardItem, Left, Right, Text, Body, Thumbnail } from 'native-base';
 // Actions
 import { photosActions } from '../bus/photos/actions';
+// Styles
+import { styles } from './styles';
 
 const mapStateToProps = (state) => {
     return {
@@ -23,42 +25,55 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators({ ...photosActions }, dispatch),
+        actions: bindActionCreators ({ ...photosActions }, dispatch),
     };
 };
 
 class Gallery extends Component {
-    componentDidMount () {
-        console.log(`componentDidMount -> -> ` );
+    componentDidMount() {
         const { actions } = this.props;
-        console.log(`componentDidMount -> 'actions' -> `, actions );
-        actions.fetchPhotosAsync();
+        actions.fetchPhotosAsync ();
     }
+
     render() {
-        const {photos} = this.props;
-        console.log(` -> "photos" -> `, photos);
+        const { photos } = this.props;
         return (
-            <Container>
-                <List>
-                    { photos.map((item, index) => {
-                        return (
-                            <ListItem key = {item.get('id')}>
-                                <Left>
-                                    <Text>{item.get('id')}</Text>
-                                </Left>
-                                <Body>
-                                <Text>777</Text>
-                                </Body>
-                            </ListItem>
-                        )
-                    })}
-                </List>
-            </Container>
+            <Content style={styles.galleryContent}>
+                {photos.map ((item, index) => {
+                    return (
+                        <Card
+                            key={item.get ('id')}
+
+                        >
+                            <CardItem header>
+                                <Text style={styles.textHeader}>{item.get ('description')}</Text>
+                            </CardItem>
+                            <CardItem
+                                cardBody
+                                style={styles.cardBody}
+                                button onPress={() => alert(`Photo Id - ${item.get ('id')}`)}
+                            >
+                                <Thumbnail
+                                    square
+                                    large
+                                    source={{ uri: item.getIn (['urls', 'thumb']) }}
+                                    style={styles.thumbImage}
+                                />
+                            </CardItem>
+                            <CardItem footer>
+                                <Text style={styles.textFooter}>{item.getIn (['user', 'name'])}</Text>
+                            </CardItem>
+
+                        </Card>
+                    )
+                })}
+            </Content>
         );
     }
 }
 
-export default connect(
+export default connect (
     mapStateToProps,
     mapDispatchToProps,
-)(Gallery);
+) (Gallery);
+

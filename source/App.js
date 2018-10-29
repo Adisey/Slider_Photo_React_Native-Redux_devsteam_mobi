@@ -14,6 +14,7 @@ import { Container } from 'native-base';
 // Components
 import { AppHeader, Gallery } from './Components';
 
+
 const instructions = Platform.select ({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
     android:
