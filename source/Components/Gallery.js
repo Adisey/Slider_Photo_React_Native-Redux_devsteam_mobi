@@ -1,16 +1,7 @@
-/**
- * Created by PhpStorm
- * Project p903_raect_native_slider_devsteam_mobi
- * User: Adisey
- * Date: 28.10.2018
- * Time: 20:21
- */
-
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // Components
-// import { StyleSheet, Text, View } from 'react-native';
 import { Content, Card, CardItem, Left, Right, Text, Body, Thumbnail } from 'native-base';
 // Actions
 import { photosActions } from '../bus/photos/actions';
@@ -25,7 +16,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators ({ ...photosActions }, dispatch),
+        actions: bindActionCreators ({ ...photosActions  }, dispatch),
     };
 };
 
@@ -41,13 +32,14 @@ class Gallery extends Component {
             <Content style={styles.galleryContent}>
                 {photos.map ((item, index) => {
                     const _showPhoto = () => {
-                        console.log(` -> "********************************" Photo Id -> ${item.get ('id')}`);
-                        navigate('ShowPhoto', { name: 'Jane' })
+                        navigate('ShowPhoto', {
+                            name: item.get ('description')? item.get ('description'): item.getIn (['user', 'name']),
+                            url: item.getIn(['urls','small']),
+                        })
                     };
                     return (
                         <Card
                             key={item.get ('id')}
-
                         >
                             <CardItem header>
                                 <Text style={styles.textHeader}>{item.get ('description')}</Text>

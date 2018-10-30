@@ -3,12 +3,19 @@ import { Provider } from 'react-redux';
 import { store } from '../init/store';
 import { Container } from 'native-base';
 // Components
-import { AppHeader, Gallery } from '../Components';
+import { Gallery } from '../Components';
 
 
 export default class Main extends Component {
     static navigationOptions = {
         title: 'Gallery',
+        headerStyle: {
+            backgroundColor: '#324291',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
     };
     render() {
         const { navigate } = this.props.navigation;
