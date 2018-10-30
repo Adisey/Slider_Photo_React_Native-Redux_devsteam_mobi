@@ -1,5 +1,5 @@
 //Core
-import { fromJS, List } from 'immutable';
+import { fromJS } from 'immutable';
 // Types
 import { type } from './types';
 

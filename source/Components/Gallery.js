@@ -36,10 +36,14 @@ class Gallery extends Component {
     }
 
     render() {
-        const { photos } = this.props;
+        const { photos, navigate } = this.props;
         return (
             <Content style={styles.galleryContent}>
                 {photos.map ((item, index) => {
+                    const _showPhoto = () => {
+                        console.log(` -> "********************************" Photo Id -> ${item.get ('id')}`);
+                        navigate('ShowPhoto', { name: 'Jane' })
+                    };
                     return (
                         <Card
                             key={item.get ('id')}
@@ -51,7 +55,7 @@ class Gallery extends Component {
                             <CardItem
                                 cardBody
                                 style={styles.cardBody}
-                                button onPress={() => alert(`Photo Id - ${item.get ('id')}`)}
+                                button onPress={ _showPhoto }
                             >
                                 <Thumbnail
                                     square
@@ -71,9 +75,7 @@ class Gallery extends Component {
         );
     }
 }
-
 export default connect (
     mapStateToProps,
     mapDispatchToProps,
 ) (Gallery);
-
