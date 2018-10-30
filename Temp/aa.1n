@@ -1,0 +1,53 @@
+D/EGL_emulation: eglMakeCurrent: 0xe3778ee0: ver 2 0 (tinfo 0xe94dc190)
+D/EGL_emulation: eglMakeCurrent: 0xe3778ee0: ver 2 0 (tinfo 0xe94dc190)
+D/EGL_emulation: eglMakeCurrent: 0xe3778ee0: ver 2 0 (tinfo 0xe94dc190)
+D/ReactNative: ReactInstanceManager.onJSBundleLoadedFromServer()
+    ReactInstanceManager.recreateReactContextInBackground()
+    ReactInstanceManager.runCreateReactContextOnNewThread()
+    ReactInstanceManager.tearDownReactContext()
+D/ReactNative: CatalystInstanceImpl.destroy() start
+W/unknown:ReactNative: Packager connection already open, nooping.
+D/ReactNative: ReactInstanceManager.createReactContext()
+D/ReactNative: Initializing React Xplat Bridge.
+D/EGL_emulation: eglMakeCurrent: 0xe3778ee0: ver 2 0 (tinfo 0xe94dc190)
+D/ReactNative: Initializing React Xplat Bridge before initializeBridge
+D/ReactNative: Initializing React Xplat Bridge after initializeBridge
+    CatalystInstanceImpl.runJSBundle()
+D/ReactNative: ReactInstanceManager.setupReactContext()
+    CatalystInstanceImpl.initialize()
+D/ReactNative: ReactInstanceManager.attachRootViewToInstance()
+W/unknown:ReactNative: Packager connection already open, nooping.
+D/ReactNative: CatalystInstanceImpl.destroy() end
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', '@@redux/INITr.k.j.k.f.g'
+    'photosReducer <---> "action.type" <---> ', '@@redux/PROBE_UNKNOWN_ACTIONd.x.5.8.5'
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', '@@redux/INITr.k.j.k.f.g'
+I/ReactNativeJS: watcherPhotos -> -**********-> 
+    'watcherFillPhotos -> ---------------- type.FETCH_PHOTOS_ASYNC-> ', 'FETCH_PHOTOS_ASYNC'
+W/ReactNativeJS: Require cycle: node_modules\native-base\dist\src\index.js -> node_modules\native-base\dist\src\basic\DatePicker.js -> node_modules\native-base\dist\src\index.js
+    
+    Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+W/ReactNativeJS: ListView is deprecated and will be removed in a future release. See https://fb.me/nolistview for more information
+W/ReactNativeJS: Require cycle: node_modules\native-base\dist\src\index.js -> node_modules\native-base\dist\src\basic\Tabs\index.js -> node_modules\native-base\dist\src\basic\Tabs\DefaultTabBar.js -> node_modules\native-base\dist\src\index.js
+    
+    Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+W/ReactNativeJS: Require cycle: node_modules\native-base\dist\src\index.js -> node_modules\native-base\dist\src\basic\Tabs\index.js -> node_modules\native-base\dist\src\basic\Tabs\ScrollableTabBar.js -> node_modules\native-base\dist\src\index.js
+    
+    Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', '@@redux/INITr.k.j.k.f.g'
+I/ReactNativeJS: Running application "p903_raect_native_slider_devsteam_mobi" with appParams: {"rootTag":71}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+I/ReactNativeJS: ' -> "photos" -> ', { size: 3,
+      _origin: 0,
+      _capacity: 3,
+      _level: 5,
+      _root: null,
+      _tail: 
+       { array: [ { id: 'a' }, { id: 'b' }, { id: 'c' } ],
+         ownerID: undefined },
+      __ownerID: undefined,
+      __hash: undefined,
+      __altered: false }
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager

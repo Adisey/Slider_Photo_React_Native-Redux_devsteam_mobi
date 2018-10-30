@@ -1,0 +1,116 @@
+D/ReactNative: ReactInstanceManager.onJSBundleLoadedFromServer()
+D/ReactNative: ReactInstanceManager.recreateReactContextInBackground()
+    ReactInstanceManager.runCreateReactContextOnNewThread()
+    ReactInstanceManager.tearDownReactContext()
+D/ReactNative: CatalystInstanceImpl.destroy() start
+W/unknown:ReactNative: Packager connection already open, nooping.
+D/ReactNative: ReactInstanceManager.createReactContext()
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTGroupViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTGroupShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTShapeViewManager
+    Could not find generated setter for class com.facebook.react.views.art.ARTShapeShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTTextViewManager
+    Could not find generated setter for class com.facebook.react.views.art.ARTTextShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.checkbox.ReactCheckBoxManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.picker.ReactDialogPickerManager
+    Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.picker.ReactDropdownPickerManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+    Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+    Could not find generated setter for class com.facebook.react.views.toolbar.ReactToolbarManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.webview.ReactWebViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.viewpager.ReactViewPagerManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+W/unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+D/ReactNative: Initializing React Xplat Bridge.
+D/ReactNative: Initializing React Xplat Bridge before initializeBridge
+D/ReactNative: CatalystInstanceImpl.destroy() end
+D/ReactNative: Initializing React Xplat Bridge after initializeBridge
+    CatalystInstanceImpl.runJSBundle()
+D/ReactNative: ReactInstanceManager.setupReactContext()
+    CatalystInstanceImpl.initialize()
+D/ReactNative: ReactInstanceManager.attachRootViewToInstance()
+I/r_devsteam_mob: Background concurrent copying GC freed 39816(5MB) AllocSpace objects, 85(1448KB) LOS objects, 38% free, 9MB/15MB, paused 582us total 143.314ms
+W/unknown:ReactNative: Packager connection already open, nooping.
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', '@@redux/INIT9.y.4.n.3.5'
+    'photosReducer <---> "action.type" <---> ', '@@redux/PROBE_UNKNOWN_ACTIONa.i.b.o.l.w'
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', '@@redux/INIT9.y.4.n.3.5'
+I/ReactNativeJS: watcherPhotos -> -**********-> 
+    'watcherFillPhotos -> ---------------- type.FETCH_PHOTOS_ASYNC-> ', 'FETCH_PHOTOS_ASYNC'
+W/ReactNativeJS: Require cycle: node_modules\native-base\dist\src\index.js -> node_modules\native-base\dist\src\basic\DatePicker.js -> node_modules\native-base\dist\src\index.js
+    
+    Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+W/ReactNativeJS: ListView is deprecated and will be removed in a future release. See https://fb.me/nolistview for more information
+W/ReactNativeJS: Require cycle: node_modules\native-base\dist\src\index.js -> node_modules\native-base\dist\src\basic\Tabs\index.js -> node_modules\native-base\dist\src\basic\Tabs\DefaultTabBar.js -> node_modules\native-base\dist\src\index.js
+    
+    Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+W/ReactNativeJS: Require cycle: node_modules\native-base\dist\src\index.js -> node_modules\native-base\dist\src\basic\Tabs\index.js -> node_modules\native-base\dist\src\basic\Tabs\ScrollableTabBar.js -> node_modules\native-base\dist\src\index.js
+    
+    Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', '@@redux/INIT9.y.4.n.3.5'
+I/ReactNativeJS: Running application "p903_raect_native_slider_devsteam_mobi" with appParams: {"rootTag":61}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+I/ReactNativeJS: ' -> "photos" -> ', { size: 3,
+      _origin: 0,
+      _capacity: 3,
+      _level: 5,
+      _root: null,
+      _tail: 
+       { array: [ { id: 'a' }, { id: 'b' }, { id: 'c' } ],
+         ownerID: undefined },
+      __ownerID: undefined,
+      __hash: undefined,
+      __altered: false }
+I/ReactNativeJS: componentDidMount -> -> 
+I/ReactNativeJS: 'componentDidMount -> \'actions\' -> ', { fillPhotos: [Function], fetchPhotosAsync: [Function] }
+    fetchPhotosAsync -------------> "Start" <-------> 
+I/ReactNativeJS: 'photosReducer <---> "action.type" <---> ', 'FETCH_PHOTOS_ASYNC'
+I/ReactNativeJS: ¿ %c action %cFETCH_PHOTOS_ASYNC %c@ 15:06:08.664 %c(in 1.00 ms)
+I/ReactNativeJS: ³ '%c prev state', 'color: #1C5FAF; font-weight: bold', { photos: 
+       { size: 3,
+         _origin: 0,
+         _capacity: 3,
+         _level: 5,
+         _root: null,
+         _tail: 
+          { array: [ { id: 'a' }, { id: 'b' }, { id: 'c' } ],
+            ownerID: undefined },
+         __ownerID: undefined,
+         __hash: undefined,
+         __altered: false } }
+    ³ '%c action    ', 'color: #149945; font-weight: bold', { type: 'FETCH_PHOTOS_ASYNC' }
+I/ReactNativeJS: ³ '%c next state', 'color: #A47104; font-weight: bold', { photos: 
+       { size: 3,
+         _origin: 0,
+         _capacity: 3,
+         _level: 5,
+         _root: null,
+         _tail: 
+          { array: [ { id: 'a' }, { id: 'b' }, { id: 'c' } ],
+            ownerID: undefined },
+         __ownerID: undefined,
+         __hash: undefined,
+         __altered: false } }
+    Ù 
