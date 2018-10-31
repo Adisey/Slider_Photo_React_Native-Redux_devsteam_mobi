@@ -1,6 +1,6 @@
 // Core
 import { put, apply } from 'redux-saga/effects';
-
+// Components
 import { api } from '../../../../REST';
 import { photosActions } from '../../actions';
 
