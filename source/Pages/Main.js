@@ -8,26 +8,28 @@ import { Gallery } from '../Components';
 
 export default class Main extends Component {
     static navigationOptions = {
-        title: 'Gallery',
+        title:       'Gallery',
         headerStyle: {
             backgroundColor: '#324291',
         },
-        headerTintColor: '#fff',
+        headerTintColor:  '#fff',
         headerTitleStyle: {
             fontWeight: 'bold',
         },
     };
-    render() {
+
+    render () {
         const { navigate } = this.props.navigation;
+
+
         return (
-            <Provider store={store}>
+            <Provider store = { store }>
                 <Container>
                     <Gallery
-                        navigate = {navigate}
+                        navigate = { navigate }
                     />
                 </Container>
             </Provider>
         );
     }
 }
-

@@ -5,12 +5,12 @@ import { type } from '../types';
 // Workers
 import { fillPhotos } from './workers';
 
-function* watcherFillPhotos() {
+function* watcherFillPhotos () {
     yield takeEvery(type.FETCH_PHOTOS_ASYNC, fillPhotos);
 }
 
 export function* watcherPhotos () {
     yield all([
-        call(watcherFillPhotos),
+        call(watcherFillPhotos)
     ]);
 }

@@ -1,20 +1,20 @@
 export const styles = {
     galleryContent: {
-        flex: 1,
+        flex:            1,
         backgroundColor: '#DCDCDC',
     },
     textHeader: {
-      color: '#000000'
+        color: '#000000',
     },
     textFooter: {
-      color: '#120BFF'
+        color: '#120BFF',
     },
     cardBody: {
-        alignItems: 'center'
+        alignItems: 'center',
     },
     thumbImage: {
         height: 300,
-        width: 300,
-        flex: 1
-    }
+        width:  300,
+        flex:   1,
+    },
 };

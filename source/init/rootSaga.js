@@ -6,7 +6,6 @@ import { watcherPhotos } from '../bus/photos/saga/watchers';
 
 export function* rootSaga () {
     yield all([
-        call(watcherPhotos),
+        call(watcherPhotos)
     ]);
 }
-

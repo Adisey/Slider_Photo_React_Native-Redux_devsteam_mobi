@@ -7,25 +7,26 @@ import { Container } from 'native-base';
 export default class ShowPhoto extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
-            title: navigation.getParam ('name', 'Photo'),
-            headerStyle: { backgroundColor: '#324291', },
-            headerTintColor: '#fff',
-            headerTitleStyle: { fontWeight: 'bold', },
+            title:            navigation.getParam('name', 'Photo'),
+            headerStyle:      { backgroundColor: '#324291' },
+            headerTintColor:  '#fff',
+            headerTitleStyle: { fontWeight: 'bold' },
         };
     };
 
-    render() {
-        const { navigate } = this.props.navigation;
-        const url = this.props.navigation.getParam ('url', 'url');
+    render () {
+        const url = this.props.navigation.getParam('url', 'url');
         const imageUrl = { uri: url };
         const win = Dimensions.get('window');
-        const imageSize = { width: win.width, height: win.height-75 };
+        const imageSize = { width: win.width, height: win.height - 75 };
+
+
         return (
-            <Provider store={ store }>
+            <Provider store = { store }>
                 <Container>
                     <Image
-                        style = { imageSize }
                         source = { imageUrl }
+                        style = { imageSize }
                     />
                 </Container>
             </Provider>

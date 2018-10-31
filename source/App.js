@@ -4,7 +4,6 @@ import { Main, ShowPhoto } from './Pages';
 
 
 export default App = StackNavigator({
-    Main: {screen: Main},
-    ShowPhoto: {screen: ShowPhoto},
+    Main:      { screen: Main },
+    ShowPhoto: { screen: ShowPhoto },
 });
-
