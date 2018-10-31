@@ -19,7 +19,7 @@ export default class ShowPhoto extends Component {
         const url = this.props.navigation.getParam ('url', 'url');
         const imageUrl = { uri: url };
         const win = Dimensions.get('window');
-        const imageSize = { width: win.width, height: win.height-80 };
+        const imageSize = { width: win.width, height: win.height-75 };
         return (
             <Provider store={ store }>
                 <Container>

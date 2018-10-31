@@ -34,7 +34,7 @@ class Gallery extends Component {
                     const _showPhoto = () => {
                         navigate('ShowPhoto', {
                             name: item.get ('description')? item.get ('description'): item.getIn (['user', 'name']),
-                            url: item.getIn(['urls','small']),
+                            url: item.getIn(['urls','regular']),
                         })
                     };
                     return (
@@ -52,7 +52,7 @@ class Gallery extends Component {
                                 <Thumbnail
                                     square
                                     large
-                                    source={{ uri: item.getIn (['urls', 'thumb']) }}
+                                    source={{ uri: item.getIn (['urls', 'small']) }}
                                     style={styles.thumbImage}
                                 />
                             </CardItem>
