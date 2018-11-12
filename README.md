@@ -13,3 +13,11 @@ https://unsplash.com/documentation
 - отображает одну фотографию с максимальной площадью.
 
 ***Предпочтительнее инициировать приложение через React Native CLI с помощью команды - react-native init TestApp, нежели чем через команду - create-react-native-app***
+
+### Готовое задание.
+
+#### Скриншоты.
+**Главная страница**
+![Главная страница](https://github.com/Adisey/p903_raect_native_slider_devsteam_mobi/blob/master/demo/main-page.png)
+**Предпросмотр картинки**
+![Предпросмотр картинки](https://github.com/Adisey/p903_raect_native_slider_devsteam_mobi/blob/master/demo/preview-image.png)
