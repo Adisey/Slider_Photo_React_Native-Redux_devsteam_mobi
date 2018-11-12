@@ -18,6 +18,10 @@ https://unsplash.com/documentation
 
 #### Скриншоты.
 **Главная страница**
+
 ![Главная страница](https://github.com/Adisey/p903_raect_native_slider_devsteam_mobi/blob/master/demo/main-page.png)
+
 **Предпросмотр картинки**
+
 ![Предпросмотр картинки](https://github.com/Adisey/p903_raect_native_slider_devsteam_mobi/blob/master/demo/preview-image.png)
+
